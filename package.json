@@ -4,6 +4,7 @@
   "description": "A passive intranet traversal HTTP proxy server.",
   "main": "lib/index.js",
   "scripts": {
+    "play": "node start.js",
     "lint": "eslint .",
     "test": "eslint . && nyc --reporter=lcov mocha test/index.js --exit",
     "lcov": "nyc report --reporter=text-lcov | coveralls"
@@ -25,7 +26,8 @@
   },
   "homepage": "https://github.com/gaapx/choline#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "uuid": "^8.1.0"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
